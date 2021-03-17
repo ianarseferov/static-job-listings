@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: 'Spartan', sans-serif;
+  background: #effafa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background: url(../images/bg-header-desktop.svg) #5ba4a4 no-repeat;
+  height: 145px;
+}
+
+.filter {
+  display: none;
+}
+
+.isVisible {
+  display: block !important;
+}
+
+.filter-container {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  top: -2rem;
+  border-radius: 5px;
+  box-shadow: 0px 5px 14px -12px #5ba4a4;
+}
+
+.filter-container a {
+  color: #5ba4a4;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.filter-container a:hover {
+  border-bottom: 2px solid #5ba4a4;
+}
+
+.filter-container .btn-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.filter-container .btn {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.filter-container .btn button {
+  border: none;
+  color: #5ba4a4;
+  padding: 5px;
+  cursor: pointer;
+  background: #effafa;
+  font-weight: 800;
+  transition: 0.4s;
+  margin: 0 !important;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.filter-container .btn button:focus {
+  outline: none;
+}
+
+.filter-container .btn span {
+  background: #5ba4a4;
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+  padding: 7px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: 0.4s;
+}
+
+.filter-container .btn span:hover {
+  background: #2c3a3a;
+}
+
+.data-container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.data-container .line {
+  border-left: 4px solid #5ba4a4 !important;
+}
+
+.data-container .card {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0px 5px 14px -12px #5ba4a4;
+}
+
+.data-container .card .horizon {
+  margin: 1rem auto 0 auto;
+  border-bottom: 1px solid #2c3a3a;
+  width: 90%;
+  display: none;
+}
+
+.data-container .card button {
+  border: none;
+  color: #5ba4a4;
+  padding: 5px;
+  cursor: pointer;
+  background: #effafa;
+  font-weight: 800;
+  transition: 0.4s;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+.data-container .card button:focus {
+  outline: none;
+}
+
+.data-container .card button:hover {
+  background: #5ba4a4;
+  color: #eef6f6;
+}
+
+.data-container .card .left {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.data-container .card .left .logo {
+  width: 70px;
+}
+
+.data-container .card .left .info {
+  padding-left: 1rem;
+}
+
+.data-container .card .left .info .company {
+  color: #5ba4a4;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.data-container .card .left .info .new {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 5px;
+  border-radius: 10px;
+  background: #5ba4a4;
+}
+
+.data-container .card .left .info .featured {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 5px;
+  border-radius: 10px;
+  background: #2c3a3a;
+}
+
+.data-container .card .left .info .position {
+  font-weight: 800;
+  cursor: pointer;
+  margin: 9px 0;
+}
+
+.data-container .card .left .info .position:hover {
+  color: #5ba4a4;
+}
+
+.data-container .card .left .info .dot {
+  font-size: 11px;
+  margin: 0;
+  color: #7b8e8e;
+}
+
+@media screen and (max-width: 1050px) {
+  .filter-container,
+  .data-container {
+    width: 768px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .filter-container,
+  .data-container {
+    width: auto;
+    margin: 0 2rem;
+  }
+  button {
+    margin: 5px !important;
+  }
+  .buttons {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    background: url(../images/bg-header-mobile.svg) #5ba4a4 no-repeat;
+  }
+  .filter-container {
+    padding: 1rem;
+  }
+  .card {
+    flex-direction: column;
+    margin: 2.5rem auto !important;
+    align-items: flex-start !important;
+  }
+  .card .horizon {
+    display: block;
+  }
+  .card .buttons {
+    width: auto;
+    margin-top: 1rem;
+    padding-left: 6px;
+  }
+  .card .left {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .card .left .info {
+    padding: 1rem 0 0 0;
+  }
+  .card .left .info .position {
+    margin: auto;
+    font-size: 1rem;
+  }
+  .card .left .info .dot {
+    margin: auto;
+  }
+  .card .left .logo {
+    width: 50px !important;
+    position: absolute;
+    top: -45px;
+    left: 10px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
