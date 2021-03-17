@@ -15,3 +15,7 @@ JavaScript used:
 5. Audio Object
 6. Filter methods
 7. Pretty much everything
+
+## Live demo
+
+[static-job-listings](https://static-job-listings-anarseferov.vercel.app/)
